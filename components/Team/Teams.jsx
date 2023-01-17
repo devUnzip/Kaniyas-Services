@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Team from "./Team";
 const Teams = () => {
@@ -22,72 +23,67 @@ const Teams = () => {
     },
   ];
   return (
-    <div>
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-              OUR GREAT TEAM
-            </h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-              We work hard. We are a team. We are a team of 3 people.
-            </p>
-          </div>
-          <div class="flex flex-wrap -m-4">
-            {/* Cards Start */}
-            {teamData.map((team) => (
-              <Team
-              key={team.id} team={team}
-              ></Team>
-            ))}
+    <>
+      <div className="container ">
+        <div className="flex flex-col text-center w-full ">
+          <h1 className="sm:text-3xl text-2xl font-bold text-primary my-14">
+            OUR GREAT TEAM
+          </h1>
+        </div>
+        <div className="flex justify-between flex-col md:flex-row items-center">
+          <div className="lg:w-1/3 sm:w-1/2 p-4 ">
+            <div className="flex justify-center relative">
+              <div className="absolute h-[350px] w-[300px]">
+                <Image
+                  src={teamData[0].Img}
+                  layout="fill"
+                  className="rounded-lg"
+                />
+              </div>
+              <div className=" relative z-10 mt-4 h-[320px] w-[275px] flex flex-col justify-center items-center text-center  bg-white opacity-0 transition-all duration-150 hover:opacity-100">
+                <h3>Gal Lebkowitz</h3>
 
-            {/* <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-               <div class="flex relative">
-                 <img
-                   alt="gallery"
-                   class="absolute inset-0 w-full h-full object-cover object-center rounded-lg"
-                   src="/assets/IMG-2.jpg"
-                 />
-                 <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                   <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                     THE SUBTITLE
-                   </h2>
-                   <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                     The Catalyzer
-                   </h1>
-                   <p class="leading-relaxed">
-                     Photo booth fam kinfolk cold-pressed sriracha leggings
-                     jianbing microdosing tousled waistcoat.
-                   </p>
-                 </div>
-               </div>
-             </div>
-             <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-               <div class="flex relative">
-                 <img
-                   alt="gallery"
-                   class="absolute inset-0 w-full h-full object-cover object-center rounded-lg"
-                   src="/assets/IMG-3.jpeg"
-                 />
-                 <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                   <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                     THE SUBTITLE
-                   </h2>
-                   <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                     The 400 Blows
-                   </h1>
-                   <p class="leading-relaxed">
-                     Photo booth fam kinfolk cold-pressed sriracha leggings
-                     jianbing microdosing tousled waistcoat.
-                   </p>
-                 </div>
-               </div>
-             </div> */}
-            {/* Cards End */}
+                <p className="leading-relaxed">
+                  Locksmith And Camera Installer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="lg:w-1/3 sm:w-1/2 p-4">
+            <div className="flex justify-center relative">
+              <div className="absolute h-[350px] w-[300px]">
+                <Image
+                  src={teamData[1].Img}
+                  layout="fill"
+                  className="rounded-lg"
+                />
+              </div>
+              <div className=" relative z-10 mt-4 h-[320px] w-[275px] flex flex-col justify-center items-center text-center  bg-white opacity-0 transition-all duration-150 hover:opacity-100">
+                <h3>Avi Goldberg</h3>
+
+                <p className="leading-relaxed">Locksmith</p>
+              </div>
+            </div>
+          </div>
+          <div className="lg:w-1/3 sm:w-1/2 p-4">
+            <div className="flex justify-center relative">
+              <div className="absolute h-[350px] w-[300px]">
+                <Image
+                  src={teamData[2].Img}
+                  layout="fill"
+                  className="rounded-lg"
+                />
+              </div>
+              <div className=" relative z-10 mt-4 h-[320px] w-[275px] flex flex-col justify-center items-center text-center  bg-white opacity-0 transition-all duration-150 hover:opacity-100">
+                <h3>Moti Levy</h3>
+
+                <p className="leading-relaxed">Locksmith</p>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </>
   );
 };
 
