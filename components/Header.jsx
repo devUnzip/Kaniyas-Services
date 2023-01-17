@@ -37,7 +37,7 @@ function Header() {
   useOutsideAlerter(dropDownRef);
   return (
     <div className="bg-primary ">
-      <div className="md:container  px-6 md:px-0 lg:border-none border-b-[1px] h-[65px] lg:py-2">
+      <div className="md:container  px-6 md:px-0 lg:border-none border-b-[1px] h-[65px] lg:h-[75px] lg:py-2">
         <div className="flex items-center justify-between lg:block">
           <div className="flex justify-between items-center">
             <div className="">
@@ -52,14 +52,14 @@ function Header() {
               />
             </div>
             <div className="hidden lg:flex ">
-              <div
-                onClick={() => router.push("/")}
+              <a
+                href="tel:+972507546969"
                 className="text-white m-4 cursor-pointer hover:scale-125 ease-in duration-300"
               >
                 (972) 50-754-6969
-              </div>
+              </a>
               <div
-                onClick={() => router.push("/")}
+                onClick={() => router.push("/contact")}
                 className="text-white m-4 cursor-pointer hover:scale-125 ease-in duration-300"
               >
                 Contact Us
@@ -84,7 +84,7 @@ function Header() {
                 >
                   <path
                     d="M5 7.5L10 12.5L15 7.5"
-                    stroke="#667085"
+                    stroke="white"
                     strokeWidth="1.67"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -96,7 +96,7 @@ function Header() {
                       <li>
                         <a
                           href="#"
-                          className="block py-2 px-4 hover:bg-gray-100 "
+                          className="block py-2 px-4  "
                         >
                           Dropdown1
                         </a>
@@ -108,7 +108,9 @@ function Header() {
               <div className="text-white m-4 cursor-pointer hover:scale-125 ease-in duration-300">
                 Our Specialty
               </div>
-              <div className="text-white  m-4 cursor-pointer hover:scale-125 ease-in duration-300">Home</div>
+              <div className="text-white  m-4 cursor-pointer hover:scale-125 ease-in duration-300">
+                Home
+              </div>
             </div>
           </div>
           <div>
@@ -153,14 +155,14 @@ function Header() {
       {hamburgerOpen && (
         <div className="absolute  z-50 bg-primary w-full body-font lg:hidden  shadow-headerLight dark:shadow-headerDark z-100 overflow-hidden">
           <div className="md:container ">
-            <div
-              onClick={handleNavLink("/")}
-              className={`text-white cursor-pointer border-b-[1px] py-2 px-3`}
+            <a
+             href="tel:+972507546969"
+              className={`text-white cursor-pointer border-b-[1px] block py-2 px-3`}
             >
               (972) 50-754-6969
-            </div>
+            </a>
             <div
-              onClick={handleNavLink("/")}
+             onClick={() => router.push("/contact")}
               className={` text-white  cursor-pointer border-b-[1px] py-2 px-3`}
             >
               Contact Us
