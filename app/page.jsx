@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Teams from "../components/Team/Teams";
 
 function page() {
   return (
-    <div className=''>
-      
+    <div>
+      <Teams></Teams>
     </div>
-  )
+  );
 }
 
-export default page
+export default page;
