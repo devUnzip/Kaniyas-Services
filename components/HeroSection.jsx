@@ -39,7 +39,7 @@ function HeroSection() {
                   </h1>
                 </div>
               </div>
-              <h1 className="text-center text-6xl leading-[70px] font-medium md:p-10 text-[#042879] ">
+              <h1 className="text-center text-5xl lg:text-6xl leading-[50px] lg:leading-[70px] font-medium md:p-10 text-[#042879] ">
                 A locksmith who is available for you around the clock
               </h1>
               <h1 className="text-center text-3xl text-[#042879]">
