@@ -5,7 +5,6 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-
 const Specialities = () => {
   useEffect(() => {
     Aos.init({
@@ -18,12 +17,16 @@ const Specialities = () => {
   return (
     <>
       <section id="Specialty" class="text-gray-600 body-font">
-        <h2 className="text-center text-5xl font-bold mt-20">
+        <h2 data-aos="fade-up" className="text-center text-5xl font-bold mt-20">
           OUR SPECIALTIES
         </h2>
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4">
-            <div data-aos="fade-right"  data-aos-duration="1200" class="px-6 py-3 lg:w-1/3">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              class="px-6 py-3 lg:w-1/3"
+            >
               <div class="h-full shadow-xl hover:shadow-2xl ease-in duration-300 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
                 <Image
                   height="100"
@@ -55,7 +58,11 @@ const Specialities = () => {
                 </a>
               </div>
             </div>
-            <div data-aos="fade-right"  data-aos-duration="1200" class="px-6 py-3 lg:w-1/3">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              class="px-6 py-3 lg:w-1/3"
+            >
               <div class="h-full shadow-xl hover:shadow-2xl ease-in duration-300 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
                 <Image
                   height="100"
@@ -87,7 +94,11 @@ const Specialities = () => {
                 </a>
               </div>
             </div>
-            <div data-aos="fade-right"  data-aos-duration="1200" class="px-6 py-3 lg:w-1/3 ">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              class="px-6 py-3 lg:w-1/3 "
+            >
               <div class="h-full shadow-xl hover:shadow-2xl ease-in duration-300 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
                 <Image
                   height="100"

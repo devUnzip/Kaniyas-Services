@@ -1,6 +1,11 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import Team from "./Team";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const Teams = () => {
   const teamData = [
     {
@@ -22,16 +27,28 @@ const Teams = () => {
       Img: "/assets/IMG-3.jpeg",
     },
   ];
+
+  useEffect(() => {
+    Aos.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
       <div id="team" className="container ">
         <div className="flex flex-col text-center w-full ">
-          <h1 className="sm:text-3xl text-2xl font-bold text-primary my-14">
+          <h1
+            data-aos="fade-up"
+            className="sm:text-3xl text-2xl font-bold text-primary my-14"
+          >
             OUR GREAT TEAM
           </h1>
         </div>
         <div className="flex justify-between flex-col md:flex-row items-center">
-          <div className="lg:w-1/3 sm:w-1/2 p-4 ">
+          <div data-aos="fade-right" className="lg:w-1/3 sm:w-1/2 p-4 ">
             <div className="flex justify-center relative">
               <div className="absolute h-[350px] w-[300px]">
                 <Image
@@ -49,7 +66,7 @@ const Teams = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/3 sm:w-1/2 p-4">
+          <div data-aos="fade-up" className="lg:w-1/3 sm:w-1/2 p-4">
             <div className="flex justify-center relative">
               <div className="absolute h-[350px] w-[300px]">
                 <Image
@@ -65,7 +82,7 @@ const Teams = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/3 sm:w-1/2 p-4">
+          <div data-aos="fade-left" className="lg:w-1/3 sm:w-1/2 p-4">
             <div className="flex justify-center relative">
               <div className="absolute h-[350px] w-[300px]">
                 <Image

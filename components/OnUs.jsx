@@ -5,7 +5,6 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-
 const OnUs = () => {
   useEffect(() => {
     Aos.init({
@@ -22,7 +21,10 @@ const OnUs = () => {
         <div className="lg:flex lg:flex-row-reverse rtl-grid mx-5 lg:items-center	md:justify-between my-16 ">
           {/* Text Article */}
 
-          <article className="lg:w-1/2 lg:ml-20 lg:rtl-grid">
+          <article
+            data-aos="fade-right"
+            className="lg:w-1/2 lg:ml-20 lg:rtl-grid"
+          >
             <h2 className="text-2xl font-bold text-center text-[#526050]">
               <a id="onus">ON US</a>
             </h2>
@@ -58,7 +60,7 @@ const OnUs = () => {
             </section>
           </article>
           {/* Image */}
-          <article className="lg:w-1/2 lg:ml-[-200px]">
+          <article data-aos="fade-left" className="lg:w-1/2 lg:ml-[-200px]">
             <Image height="300" width="400" src="/assets/on.jpeg" />
           </article>
         </div>
