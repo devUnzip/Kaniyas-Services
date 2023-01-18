@@ -4,7 +4,7 @@ import React from "react";
 const Specialities = () => {
   return (
     <>
-      <section class="text-gray-600 body-font">
+      <section id="Specialty" class="text-gray-600 body-font">
         <h2 className="text-center text-5xl font-bold mt-20">
           OUR SPECIALTIES
         </h2>

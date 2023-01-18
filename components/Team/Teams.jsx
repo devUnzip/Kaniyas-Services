@@ -24,7 +24,7 @@ const Teams = () => {
   ];
   return (
     <>
-      <div className="container ">
+      <div id="team" className="container ">
         <div className="flex flex-col text-center w-full ">
           <h1 className="sm:text-3xl text-2xl font-bold text-primary my-14">
             OUR GREAT TEAM
