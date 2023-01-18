@@ -1,6 +1,8 @@
-import React from "react";
+"use client";
+import { useRouter } from "next/navigation";
 
 function HeroSection() {
+  const router = useRouter();
   return (
     <>
       <section className="bg-[url('https://manulor.co.il/wp-content/uploads/2023/01/cover-website-green-1.png')] lg:bg-[url('https://manulor.co.il/wp-content/uploads/2023/01/man-in-white2-1.jpg')] bg-cover bg-no-repeat h-[100vh]">
@@ -46,7 +48,10 @@ function HeroSection() {
                 Light you up in the dark
               </h1>
 
-              <button className="flex mx-auto text-white bg-[#fd7510] border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg my-5">
+              <button
+                onClick={() => router.push("/contact")}
+                className="flex mx-auto cursor-pointer text-white bg-[#fd7510] border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg my-5"
+              >
                 Contact Us
               </button>
 
