@@ -16,7 +16,10 @@ const Specialities = () => {
   }, []);
   return (
     <>
-      <section id="Specialty" className="text-gray-600 body-font">
+      <section
+        id="Specialty"
+        className="text-gray-600 body-font lg:bg-[url('/assets/bg.png')] z-1"
+      >
         <h2 data-aos="fade-up" className="text-center text-5xl font-bold mt-20">
           OUR SPECIALTIES
         </h2>
@@ -25,9 +28,9 @@ const Specialities = () => {
             <div
               data-aos="fade-right"
               data-aos-duration="1200"
-              className="px-6 py-3 lg:w-1/3"
+              className="px-6 py-3 lg:w-1/3 "
             >
-              <div className="h-full shadow-xl hover:shadow-2xl ease-in duration-300 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+              <div className="h-full shadow-xl hover:shadow-2xl ease-in duration-300 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative bg-white z-50	">
                 <Image
                   height="100"
                   width="100"
@@ -64,7 +67,7 @@ const Specialities = () => {
               data-aos-duration="1200"
               className="px-6 py-3 lg:w-1/3"
             >
-              <div className="h-full shadow-xl hover:shadow-2xl ease-in duration-300 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+              <div className="h-full shadow-xl hover:shadow-2xl ease-in duration-300 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative bg-white z-50	">
                 <Image
                   height="100"
                   width="100"
@@ -101,7 +104,7 @@ const Specialities = () => {
               data-aos-duration="1200"
               className="px-6 py-3 lg:w-1/3 "
             >
-              <div className="h-full shadow-xl hover:shadow-2xl ease-in duration-300 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+              <div className="h-full shadow-xl hover:shadow-2xl ease-in duration-300 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative bg-white z-50	">
                 <Image
                   height="100"
                   width="100"
