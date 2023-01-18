@@ -11,7 +11,7 @@ const OnUs = () => {
 
           <article className="lg:w-1/2 lg:ml-20 lg:rtl-grid">
             <h2 className="text-2xl font-bold text-center text-[#526050]">
-              ON US
+              <a id="onus">ON US</a>
             </h2>
             <section>
               <div>

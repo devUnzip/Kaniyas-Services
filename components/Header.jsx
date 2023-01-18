@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-
+import Link from "next/link";
 function Header() {
   const router = useRouter();
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -36,7 +36,7 @@ function Header() {
   const dropDownRef = useRef(null);
   useOutsideAlerter(dropDownRef);
   return (
-    <div className="bg-primary ">
+    <div id="home" className="bg-primary ">
       <div className="md:container  px-6 md:px-0 lg:border-none border-b-[1px] h-[65px] lg:h-[75px] lg:py-2">
         <div className="flex items-center justify-between lg:block">
           <div className="flex justify-between items-center">
@@ -58,22 +58,25 @@ function Header() {
               >
                 (972) 50-754-6969
               </a>
-              <div
-                onClick={() => router.push("/contact")}
+              <Link
+                href={"/contact"}
+                // onClick={() => router.push("/contact")}
                 className="text-white m-4 cursor-pointer hover:scale-125 ease-in duration-300"
               >
                 Contact Us
-              </div>
+              </Link>
 
               <div className="text-white m-4 cursor-pointer hover:scale-125 ease-in duration-300">
-                Reviews from Google
+                <a href="#team">Reviews from Google</a>
               </div>
               <div
                 onClick={() => setDropDownOpen(!dropDownOpen)}
                 className="text-white relative m-4 cursor-pointer flex items-center hover:scale-125 ease-in duration-300"
                 ref={dropDownRef}
               >
-                <div>On Us</div>
+                <div>
+                  <a href="#onus">On Us</a>
+                </div>
                 <svg
                   width="20"
                   height="20"
@@ -94,11 +97,8 @@ function Header() {
                   <div className="absolute top-[25px] -left-4 z-10 w-32 bg-secondary rounded divide-y divide-gray-100 shadow ">
                     <ul className="py-1 text-sm text-white">
                       <li>
-                        <a
-                          href="#"
-                          className="block py-2 px-4  "
-                        >
-                          Dropdown1
+                        <a href="#team" className="block py-2 px-4  ">
+                          Our Team
                         </a>
                       </li>
                     </ul>
@@ -106,10 +106,10 @@ function Header() {
                 )}
               </div>
               <div className="text-white m-4 cursor-pointer hover:scale-125 ease-in duration-300">
-                Our Specialty
+                <a href="#Specialty">Our Specialty</a>
               </div>
               <div className="text-white  m-4 cursor-pointer hover:scale-125 ease-in duration-300">
-                Home
+                <a href="#home">Home</a>
               </div>
             </div>
           </div>
@@ -156,13 +156,13 @@ function Header() {
         <div className="absolute  z-50 bg-primary w-full body-font lg:hidden  shadow-headerLight dark:shadow-headerDark z-100 overflow-hidden">
           <div className="md:container ">
             <a
-             href="tel:+972507546969"
+              href="tel:+972507546969"
               className={`text-white cursor-pointer border-b-[1px] block py-2 px-3`}
             >
               (972) 50-754-6969
             </a>
             <div
-             onClick={() => router.push("/contact")}
+              onClick={() => router.push("/contact")}
               className={` text-white  cursor-pointer border-b-[1px] py-2 px-3`}
             >
               Contact Us
@@ -171,7 +171,7 @@ function Header() {
             <div
               className={`  text-white  cursor-pointer border-b-[1px] py-2 px-3`}
             >
-              Reviews from Google
+              <a href="#team">Reviews from Google</a>
             </div>
             <div
               className={`  text-white cursor-pointer border-b-[1px] py-2 px-3`}
@@ -181,7 +181,9 @@ function Header() {
                 onClick={() => setDropDownOpen(!dropDownOpen)}
                 className="text-white relative group  cursor-pointer justify-between flex "
               >
-                <div className="">On us</div>
+                <div className="">
+                  <a href="#onus">On Us</a>
+                </div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -201,10 +203,10 @@ function Header() {
                     <ul className="py-1 text-sm text-secondary">
                       <li>
                         <a
-                          href="#"
+                          href="#team"
                           className="block py-2 px-4 hover:bg-gray-100 hover:text-primary"
                         >
-                          Dropdown1
+                          Our Team
                         </a>
                       </li>
                     </ul>
@@ -215,9 +217,11 @@ function Header() {
             <div
               className={` text-white  cursor-pointer border-b-[1px] py-2 px-3`}
             >
-              Our Specialty
+              <a href="#Specialty">Our Specialty</a>
             </div>
-            <div className={` text-white  cursor-pointer py-2 px-3`}>Home</div>
+            <div className={` text-white  cursor-pointer py-2 px-3`}>
+              <a href="#home">Home</a>
+            </div>
           </div>
         </div>
       )}
