@@ -55,6 +55,7 @@ const Teams = () => {
                   src={teamData[0].Img}
                   layout="fill"
                   className="rounded-lg"
+                  alt="team"
                 />
               </div>
               <div className=" relative z-10 mt-4 h-[320px] w-[275px] flex flex-col justify-center items-center text-center  bg-white opacity-0 transition-all duration-150 hover:opacity-100">
@@ -73,6 +74,7 @@ const Teams = () => {
                   src={teamData[1].Img}
                   layout="fill"
                   className="rounded-lg"
+                  alt="team"
                 />
               </div>
               <div className=" relative z-10 mt-4 h-[320px] w-[275px] flex flex-col justify-center items-center text-center  bg-white opacity-0 transition-all duration-150 hover:opacity-100">
@@ -89,6 +91,7 @@ const Teams = () => {
                   src={teamData[2].Img}
                   layout="fill"
                   className="rounded-lg"
+                  alt="team"
                 />
               </div>
               <div className=" relative z-10 mt-4 h-[320px] w-[275px] flex flex-col justify-center items-center text-center  bg-white opacity-0 transition-all duration-150 hover:opacity-100">

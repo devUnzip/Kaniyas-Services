@@ -61,7 +61,7 @@ const OnUs = () => {
           </article>
           {/* Image */}
           <article data-aos="fade-left" className="lg:w-1/2 lg:ml-[-200px]">
-            <Image height="300" width="400" src="/assets/on.jpeg" />
+            <Image alt="test" height="300" width="400" src="/assets/on.jpeg" />
           </article>
         </div>
       </section>

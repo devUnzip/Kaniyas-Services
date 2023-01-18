@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 
-function page() {
+function page(props) {
+  console.log(props.params);
   return (
     <>
       <section className="">
@@ -14,7 +16,7 @@ function page() {
             <div className="flex flex-wrap -m-2">
               <div className="p-2 w-1/2">
                 <div className="relative">
-                  <label for="name" className="leading-7 text-sm text-gray-600">
+                  <label htmlFor="name" className="leading-7 text-sm text-gray-600">
                     Name
                   </label>
                   <input
@@ -28,7 +30,7 @@ function page() {
               <div className="p-2 w-1/2">
                 <div className="relative">
                   <label
-                    for="email"
+                    htmlFor="email"
                     className="leading-7 text-sm text-gray-600"
                   >
                     Email
@@ -44,7 +46,7 @@ function page() {
               <div className="p-2 w-1/2">
                 <div className="relative">
                   <label
-                    for="email"
+                    htmlFor="number"
                     className="leading-7 text-sm text-gray-600"
                   >
                     Cell phone number
@@ -60,7 +62,7 @@ function page() {
               <div className="p-2 w-1/2">
                 <div className="relative">
                   <label
-                    for="email"
+                    htmlFor="street"
                     className="leading-7 text-sm text-gray-600"
                   >
                     Street and tax
@@ -78,7 +80,7 @@ function page() {
                 <div className="">
                   <div className="relative">
                     <label
-                      for="email"
+                      htmlFor="city"
                       className="leading-7 text-sm text-gray-600"
                     >
                       City
@@ -93,7 +95,7 @@ function page() {
                 </div>
                 <div className="relative">
                   <label
-                    for="message"
+                    htmlFor="message"
                     className="leading-7 text-sm text-gray-600"
                   >
                     What is the job
