@@ -9,8 +9,8 @@ function page() {
   return (
     <>
       <HeroSection />
-      <OnUs/>
       <Specialities />
+      <OnUs/>
       <Teams />
     </>
   );

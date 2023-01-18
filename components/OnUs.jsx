@@ -1,7 +1,20 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 const OnUs = () => {
+  useEffect(() => {
+    Aos.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
       {/* on us section */}
